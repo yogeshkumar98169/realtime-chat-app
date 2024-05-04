@@ -22,7 +22,7 @@ export default function Login() {
     }
    },[])
   return (
-    <div className=" shadow-md flex justify-center place-items-center flex-col p-4 w-96 mx-auto my-10 bg-white border-gray-200 dark:bg-gray-900">
+    <div className=" shadow-md flex justify-center place-items-center flex-col p-4 w-96 mx-auto my-10 bg-white border-gray-200 dark:bg-gray-900 h-72">
       <div className='text-white'>Let's begin your journey today</div>
       <div>
         <GoogleButton
