@@ -2,12 +2,12 @@ import { initializeApp } from "firebase/app";
 import { getAuth, GoogleAuthProvider } from 'firebase/auth'
 import { getFirestore } from '@firebase/firestore'
 const firebaseConfig = {
-    apiKey: "AIzaSyArFIAhmQowNO8Urpckdbw9E86vK2fo2b4",
-    authDomain: "realtimeroomschatapp.firebaseapp.com",
-    projectId: "realtimeroomschatapp",
-    storageBucket: "realtimeroomschatapp.appspot.com",
-    messagingSenderId: "598864643519",
-    appId: "1:598864643519:web:ccb9f848f2fcd52cdd4d0a"
+    apiKey: String(import.meta.env.API_KEY),
+    authDomain: String(import.meta.env.AUTH_DOMAIN),
+    projectId: String(import.meta.env.PROJECT_ID),
+    storageBucket: String(import.meta.env.STORAGE_BUCKET),
+    messagingSenderId: String(import.meta.env.MESSAGING_SENDER_ID),
+    appId: String(import.meta.env.APP_ID)
 };
 
 const app = initializeApp(firebaseConfig);
